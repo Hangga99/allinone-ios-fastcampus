@@ -16,40 +16,61 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k6U-gi-Mfp">
-                                <rect key="frame" x="138" y="709" width="115" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MyPice" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K3d-vN-6ff">
+                                <rect key="frame" x="143" y="117" width="104" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="ReN-G0-bhn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dog" translatesAutoresizingMaskIntoConstraints="NO" id="dPB-IE-4GD">
+                                <rect key="frame" x="35" y="183" width="320" height="320"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="0Hl-0G-FkK"/>
+                                    <constraint firstAttribute="height" constant="320" id="VBW-BD-fl8"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="₩100000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xhr-7g-fZO">
+                                <rect key="frame" x="128" y="625" width="144" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k6U-gi-Mfp">
+                                <rect key="frame" x="140" y="717" width="110" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="OAy-Gp-Ad0"/>
+                                    <constraint firstAttribute="width" constant="110" id="rzk-RM-3TM"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Refresh">
-                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="25"/>
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="23"/>
                                     <color key="baseForegroundColor" systemColor="systemPinkColor"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="showAlert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2a8-Nu-agv"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MyPice" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K3d-vN-6ff">
-                                <rect key="frame" x="143" y="92" width="104" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dPB-IE-4GD">
-                                <rect key="frame" x="35" y="183" width="320" height="320"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="₩100000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xhr-7g-fZO">
-                                <rect key="frame" x="128" y="618" width="134" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="k6U-gi-Mfp" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="55b-el-BOv"/>
+                            <constraint firstItem="K3d-vN-6ff" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="8z9-Lm-6Nj"/>
+                            <constraint firstItem="dPB-IE-4GD" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="9ja-Gv-SoB"/>
+                            <constraint firstItem="Xhr-7g-fZO" firstAttribute="centerX" secondItem="k6U-gi-Mfp" secondAttribute="centerX" constant="5" id="DiF-TF-3XW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="k6U-gi-Mfp" secondAttribute="bottom" constant="43" id="IAp-AX-iKB"/>
+                            <constraint firstItem="K3d-vN-6ff" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="143" id="L46-Rx-qwX"/>
+                            <constraint firstItem="dPB-IE-4GD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="136" id="PlT-Sq-Xdj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="K3d-vN-6ff" secondAttribute="trailing" constant="143" id="rCV-V8-38h"/>
+                            <constraint firstItem="k6U-gi-Mfp" firstAttribute="top" secondItem="Xhr-7g-fZO" secondAttribute="bottom" constant="56" id="zCn-R8-XyR"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="priceLable" destination="Xhr-7g-fZO" id="0Mh-U4-Sgo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -57,6 +78,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="dog" width="1372" height="2024.5"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
